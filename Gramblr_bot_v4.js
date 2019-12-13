@@ -1,4 +1,4 @@
-let GRAMBLR_UI = {
+const GRAMBLR_UI = {
 	like_button: "",
 	unpause_likes_button: "",
 	send_client_likes_button: "",
@@ -11,7 +11,7 @@ let GRAMBLR_UI = {
 	switch_button: ""
 }
 
-let GRAMBLR_STATES = {
+const GRAMBLR_STATES = {
 	url_state: "",
 	liked_images: 0,
 	current_user_account: 0,
@@ -31,7 +31,7 @@ const PARAMETERS = {
 	limit_user_account: 16
 }
 
-let CLOCK_TIMER = {
+const CLOCK_TIMER = {
 	limit: 1500,
 	clock_task: "",
 	stopped: false,
@@ -55,13 +55,13 @@ let CLOCK_TIMER = {
 	}
 }
 
-let TASKS = {
+const TASKS = {
 	mine_likes: "",
 	unpause_likes: "",
 	send_likes: ""
 }
 
-let GRAMBLR_METHODS = {
+const GRAMBLR_METHODS = {
 	define_variable: function() { 																	//IMPORTANT !!!! 
 		GRAMBLR_STATES.url_state = location.href;
 																									/*
@@ -341,7 +341,7 @@ let GRAMBLR_METHODS = {
 	}
 }
 
-function main() {
+const main = () => {
 	let current_location = location.href;
 
 	if(
