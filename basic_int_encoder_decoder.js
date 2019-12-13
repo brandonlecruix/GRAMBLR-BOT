@@ -47,7 +47,7 @@ const encode_int = (int) => {
 
 }
 
-function decode_int(str) {
+const decode_int = (str) => {
     let newArr = [];
     let arr = Array.from(str);
 
@@ -86,7 +86,7 @@ function decode_int(str) {
         }
     }
 
-    for (i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         newArr.push(letter_map(arr[i]));
     }    
     return eval(newArr.join(""));
